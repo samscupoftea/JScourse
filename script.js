@@ -145,15 +145,11 @@ const markHeightM = 1.69;
 const johnWeightKg = 92;
 const johnHeightM = 1.95;
 
-console.log(johnWeightKg);
-const markHeightSquaredM = markHeightM **2;
-console.log (markHeightSquaredM);
+// **2 means squared. 
+const markBMI = markWeightKg / markHeightM **2;
 
-const markBMI = markWeightKg / markHeightSquaredM;
-console.log (markBMI);
-const johnHeightSquaredM = johnHeightM **2;
-const johnBMI = johnWeightKg / markHeightSquaredM;
-console.log (johnBMI);
+const johnBMI = johnWeightKg / johnHeightM **2; 
+console.log (markBMI, johnBMI);
 
 const markHigherBMI = markBMI > johnBMI;
 console.log (markHigherBMI);
