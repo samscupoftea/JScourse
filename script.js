@@ -139,7 +139,7 @@ Mark and John are trying to compare their BMI, which is calculated using the for
 
 1. Store Mark's and John's Weight and Height in variables. 
 2. Calculate both their BMI's using the formula (You can use both versions)
-*/
+
 const markWeightKg = 78;
 const markHeightM = 1.69;
 const johnWeightKg = 92;
@@ -153,3 +153,15 @@ console.log (markBMI, johnBMI);
 
 const markHigherBMI = markBMI > johnBMI;
 console.log (markHigherBMI);
+*/
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+const jonas = "I'm " + firstName + ',a' + (year - birthYear) + ' years old ' + job + '!';
+console.log(jonas);
+
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log (jonasNew);
