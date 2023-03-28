@@ -114,7 +114,7 @@ console.log(ageSarah >= 18);
 
  console.log(now - 1991 > now - 2018);
 
- */
+
 // math operators are usually executed before the comparisson operator . 
 
  const now = 2037;
@@ -126,5 +126,34 @@ console.log(now - 1991 > now - 2018);
 console.log(25 - 10 -5);
 
 let x, y;
-x = y = 25 - 10 - 5;
+x = y = 25 - 10 - 5; // x = y = 10 Therefore x and y are 10 e.g 10 10 
 console.log(x,y);
+
+//Due to precedence, the divide would be executed first which wouldn't make sense. The solution for this it to use parenthesis will be executed first(snajsn )
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+
+
+//coding challenge 1 
+Mark and John are trying to compare their BMI, which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height).
+
+1. Store Mark's and John's Weight and Height in variables. 
+2. Calculate both their BMI's using the formula (You can use both versions)
+*/
+const markWeightKg = 78;
+const markHeightM = 1.69;
+const johnWeightKg = 92;
+const johnHeightM = 1.95;
+
+console.log(johnWeightKg);
+const markHeightSquaredM = markHeightM **2;
+console.log (markHeightSquaredM);
+
+const markBMI = markWeightKg / markHeightSquaredM;
+console.log (markBMI);
+const johnHeightSquaredM = johnHeightM **2;
+const johnBMI = johnWeightKg / markHeightSquaredM;
+console.log (johnBMI);
+
+const markHigherBMI = markBMI > johnBMI;
+console.log (markHigherBMI);
