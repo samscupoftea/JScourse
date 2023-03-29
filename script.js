@@ -153,7 +153,7 @@ console.log (markBMI, johnBMI);
 
 const markHigherBMI = markBMI > johnBMI;
 console.log (markHigherBMI);
-*/
+
 
 const firstName = 'Jonas';
 const job = 'teacher';
@@ -165,3 +165,32 @@ console.log(jonas);
 
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 console.log (jonasNew);
+
+console.log(`Just a regular string...`);
+
+console.log('string with \n\
+multiple \n\
+lines');
+
+console.log(`String
+multiple 
+lines`);
+*/
+
+const age = 12; 
+const isOldEnough = age >= 18; 
+
+if (isOldEnough) {
+    console.log(`Sarah can start driving lessons 🚗 `);
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :) `);
+} 
+
+//This is a control structure. 
+
+if(){
+
+} else {
+
+}
