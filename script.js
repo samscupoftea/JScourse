@@ -210,7 +210,7 @@ console.log(century);
 
 HINT: Use if/else statement :) 
 
-*/
+
 
 const markWeightKg = 78;
 const markHeightM = 1.69;
@@ -227,7 +227,7 @@ const markHigherBMI = markBMI > johnBMI;
 console.log (markHigherBMI);
 
 if (markBMI > johnBMI) {
-    console.log(`Marks's BMI ${markBMI} is higher than John's ${johnBMI}!`);
+    console.log(`Marks's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
 } else {
     console.log(`John's BMI is higher than Mark's!`);
 }
