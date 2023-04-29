@@ -234,6 +234,9 @@ if (markBMI > johnBMI) {
 
 
 // type conversion
+// type conversion is when we change a number into a string and visa versa. 
+// type cohersion is when JS automatically changes the variable type. 
+
 const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
