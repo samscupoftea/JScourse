@@ -254,7 +254,7 @@ if (markBMI > johnBMI) {
 // let n = '1' + 1; // '11' 
 // n = n - 1; 
 // console.log(n);
-*/
+
 
 //Truthy and falsy values 
 //5 falsy values: 0, '' , undefined , null, NaN
@@ -279,3 +279,30 @@ if (height) {
 } else {
     console.log('Height is UNDEFINED')
 }
+*/
+//equality operator will return a boolean value (true of false)
+const age = '18';
+if (age === 18) console.log('You just became and adult :D (strict)');
+// === strict equality operator
+// == loose equality operator 
+//TIP - Avoid the loose equality operator as much as possible. It doesn't discriminate between numbers and strings. 
+if (age == 18) console.log('You just became and adult :D (loose)');
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {   // 22 === 23 -> FALSE
+    console.log('Cool! 23 is an amazing number!')
+} else if (favourite === 7) {
+    console.log(`7 is also a cool number`)
+      
+} else if (favourite ===9){
+    console.log(`9 is also a cool number`)
+}
+else {
+    console.log('Number is not 23 or 7 or 9')
+}
+//operator for different is !-- 
+
+if(favourite !== 23) console.log('Why not 23?');
