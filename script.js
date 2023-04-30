@@ -279,7 +279,7 @@ if (height) {
 } else {
     console.log('Height is UNDEFINED')
 }
-*/
+
 //equality operator will return a boolean value (true of false)
 const age = '18';
 if (age === 18) console.log('You just became and adult :D (strict)');
@@ -306,3 +306,24 @@ else {
 //operator for different is !-- 
 
 if(favourite !== 23) console.log('Why not 23?');
+*/
+
+ const hasDriversLicense = true; // A 
+ const hasGoodVision = false;
+// and operatoer && 
+// or operator || 
+// not operator ! 
+
+ console.log(hasDriversLicense && hasGoodVision);
+ console.log(hasDriversLicense || hasGoodVision);
+ console.log(!hasDriversLicense);
+
+ const shouldDrive = hasDriversLicense && hasGoodVision;
+
+ if(shouldDrive) {
+    console.log('Sarah is able to drive!')
+ } else {
+    console.log('Someone else should drive.')
+ }
+const isTired = true // C 
+console.log(hasDriversLicense || hasGoodVision);
