@@ -306,7 +306,7 @@ else {
 //operator for different is !-- 
 
 if(favourite !== 23) console.log('Why not 23?');
-*/
+
 
  const hasDriversLicense = true; // A 
  const hasGoodVision = true;
@@ -333,4 +333,48 @@ if(hasDriversLicense && hasGoodVision && !isTired) {
  } else {
     console.log('Someone else should drive.')
  }
- 
+
+*/
+
+
+//declare variables for scores and sums of each team 
+// used variable to calculate the average and made that a variable. 
+// used console log and string and template literals to create a message saying the average score for each team
+// to find out which is the winner, I used if else statements to establish which team won from the higher score or whether it was a draw. 
+
+const dolphinScoreSum = (96 + 108 + 89);
+console.log (dolphinScoreSum);
+
+const dolphinScoreAverage = dolphinScoreSum / 3;
+console.log (dolphinScoreAverage);
+console.log (`The average Dolphin score is ${dolphinScoreAverage}. `);
+
+const koalaScoreSum = (88 + 91 + 110);
+console.log (koalaScoreSum);
+
+const koalaScoreAverage = koalaScoreSum / 3;
+console.log (koalaScoreSum);
+console.log (`The average Koala score is ${koalaScoreAverage}.`)
+
+
+if (dolphinScoreAverage > koalaScoreAverage) {
+    console.log ('Dophins are the winners!');
+} else if (dolphinScoreAverage === koalaScoreAverage) {
+    console.log ('Dolphins and Koalas draw.');
+} else {
+    (dolphinScoreAverage < koalaScoreAverage) 
+        console.log ('Koalas are the winners');
+}
+
+
+
+
+
+
+
+//TEST DATA - Dolphins score 96, 108 and 89. Koalas score 88, 91 and 123. 
+
+// 1st: Find the average number how to:  
+// 1 . Find the sum (add all numbers together )
+// 2. determine amount of numbers 
+// 3. divie the sum by the total numbers ( )
