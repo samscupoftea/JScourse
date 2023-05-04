@@ -359,7 +359,7 @@ console.log (koalaScore);
 console.log (`The average Koala score is ${koalaScoreAverage}.`)
 
 
-if (dolphinScoreAverage > koalaScoreAverage) {
+if (dolphinScoreAverage > koalaScoreAverage && isMinimumScore) {
     console.log ('Dophins are the winners!');
 } else if (dolphinScoreAverage === koalaScoreAverage) {
     console.log ('Dolphins and Koalas draw.');
@@ -368,7 +368,9 @@ if (dolphinScoreAverage > koalaScoreAverage) {
         console.log ('Koalas are the winners');
 }
 
+const minimumScore = 100;
 
+console.log(koalaScoreAverage && isMinimumScore);
 
 
 
