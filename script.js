@@ -309,8 +309,8 @@ if(favourite !== 23) console.log('Why not 23?');
 */
 
  const hasDriversLicense = true; // A 
- const hasGoodVision = false;
-// and operatoer && 
+ const hasGoodVision = true;
+// and operator && 
 // or operator || 
 // not operator ! 
 
@@ -320,10 +320,17 @@ if(favourite !== 23) console.log('Why not 23?');
 
  const shouldDrive = hasDriversLicense && hasGoodVision;
 
- if(shouldDrive) {
+//  if(shouldDrive) {
+//     console.log('Sarah is able to drive!')
+//  } else {
+//     console.log('Someone else should drive.')
+//  }
+const isTired = false; // C variable 
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if(hasDriversLicense && hasGoodVision && !isTired) {
     console.log('Sarah is able to drive!')
  } else {
     console.log('Someone else should drive.')
  }
-const isTired = true // C 
-console.log(hasDriversLicense || hasGoodVision);
+ 
