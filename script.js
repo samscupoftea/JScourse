@@ -342,18 +342,20 @@ if(hasDriversLicense && hasGoodVision && !isTired) {
 // used console log and string and template literals to create a message saying the average score for each team
 // to find out which is the winner, I used if else statements to establish which team won from the higher score or whether it was a draw. 
 
-const dolphinScoreSum = (96 + 108 + 89);
-console.log (dolphinScoreSum);
+const dolphinScore = (96 + 108 + 89);
+console.log (dolphinScore);
 
-const dolphinScoreAverage = dolphinScoreSum / 3;
+const dolphinScoreSum = 3;
+const dolphinScoreAverage = dolphinScore / dolphinScoreSum;
 console.log (dolphinScoreAverage);
 console.log (`The average Dolphin score is ${dolphinScoreAverage}. `);
 
-const koalaScoreSum = (88 + 91 + 110);
-console.log (koalaScoreSum);
+const koalaScore = (88 + 91 + 110);
+console.log (koalaScore);
+const koalaScoreSum = 3;
 
-const koalaScoreAverage = koalaScoreSum / 3;
-console.log (koalaScoreSum);
+const koalaScoreAverage = koalaScore / koalaScoreSum;
+console.log (koalaScore);
 console.log (`The average Koala score is ${koalaScoreAverage}.`)
 
 
