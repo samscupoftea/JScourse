@@ -361,12 +361,14 @@ console.log (`The average Koala score is ${koalaScoreAverage}.`)
 
 if (dolphinScoreAverage > koalaScoreAverage && dolphinScoreAverage >= 100) {
     console.log ('Dophins are the winners!');
-} else if (dolphinScoreAverage === koalaScoreAverage >= 100) {
+} else if (dolphinScoreAverage < koalaScoreAverage && koalaScoreAverage >= 100) {
+        console.log ('Koalas are the winners');
+ } else if (dolphinScoreAverage === koalaScoreAverage && dolphinScoreAverage >= 100 && koalaScoreAverage >= 100) 
+ {
     console.log ('Dolphins and Koalas draw.');
 } else {
-    (dolphinScoreAverage < koalaScoreAverage && koalaScoreAverage >= 100) 
-        console.log ('Koalas are the winners');
-}
+    console.log ('No one wins the trophy! :(');
+} 
 
 
 
@@ -379,4 +381,4 @@ if (dolphinScoreAverage > koalaScoreAverage && dolphinScoreAverage >= 100) {
 // 1st: Find the average number how to:  
 // 1 . Find the sum (add all numbers together )
 // 2. determine amount of numbers 
-// 3. divie the sum by the total numbers ( )
+// 3. divie the sum by the total numbers ( 
