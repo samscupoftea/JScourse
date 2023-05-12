@@ -342,7 +342,7 @@ if(hasDriversLicense && hasGoodVision && !isTired) {
 // used console log and string and template literals to create a message saying the average score for each team
 // to find out which is the winner, I used if else statements to establish which team won from the higher score or whether it was a draw. 
 
-const dolphinScore = (96 + 108 + 89);
+const dolphinScore = (97 + 112 + 81);
 console.log (dolphinScore);
 
 const dolphinScoreSum = 3;
@@ -350,7 +350,7 @@ const dolphinScoreAverage = dolphinScore / dolphinScoreSum;
 console.log (dolphinScoreAverage);
 console.log (`The average Dolphin score is ${dolphinScoreAverage}. `);
 
-const koalaScore = (88 + 91 + 110);
+const koalaScore = (109 + 95 + 86);
 console.log (koalaScore);
 const koalaScoreSum = 3;
 
@@ -359,18 +359,16 @@ console.log (koalaScore);
 console.log (`The average Koala score is ${koalaScoreAverage}.`)
 
 
-if (dolphinScoreAverage > koalaScoreAverage && isMinimumScore) {
+if (dolphinScoreAverage > koalaScoreAverage && dolphinScoreAverage >= 100) {
     console.log ('Dophins are the winners!');
-} else if (dolphinScoreAverage === koalaScoreAverage) {
+} else if (dolphinScoreAverage === koalaScoreAverage >= 100) {
     console.log ('Dolphins and Koalas draw.');
 } else {
-    (dolphinScoreAverage < koalaScoreAverage) 
+    (dolphinScoreAverage < koalaScoreAverage && koalaScoreAverage >= 100) 
         console.log ('Koalas are the winners');
 }
 
-const minimumScore = 100;
 
-console.log(koalaScoreAverage && isMinimumScore);
 
 
 
