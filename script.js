@@ -334,7 +334,8 @@ if(hasDriversLicense && hasGoodVision && !isTired) {
     console.log('Someone else should drive.')
  }
 
-*/
+else if (dolphinScoreAverage === koalaScoreAverage >= 100) {
+    console.log ('Dolphins and Koalas draw.')
 
 
 //declare variables for scores and sums of each team 
@@ -382,3 +383,45 @@ if (dolphinScoreAverage > koalaScoreAverage && dolphinScoreAverage >= 100) {
 // 1 . Find the sum (add all numbers together )
 // 2. determine amount of numbers 
 // 3. divie the sum by the total numbers ( 
+
+*/ 
+
+const day = 'saturday';
+
+switch (day) {
+case 'monday': // day === 'monday'
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+case 'wednesday':
+case 'thursday':
+    console.log('Write code examples');
+    break;
+case 'friday':
+    console.log('Record vidoes');
+    break;
+case 'saturday':
+case 'Sunday':
+    console.log('Enjoy the weekend :D');
+    break;
+    default:
+    console.log('Not a valid day!');
+}
+
+if (day === 'monday'){
+    console.log('Plan course structure');
+    console.log('Go to coding meetup'); 
+} else if (day === 'tuesday'){
+    console.log('Prepare theory videos');
+} else if (day === 'wednesday'|| day === 'thursday'){
+    console.log('Write code examples');
+} else if (day === 'friday'){
+    console.log('Record vidoes');
+} else if (day === 'saturday' || day === 'sunday'); {
+    console.log('Enjoy the weekend! :D');
+} else {
+    console.log('Not a valid day!');
+}
