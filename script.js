@@ -425,7 +425,7 @@ if (day === 'monday'){
 } else {
     console.log('Not a valid day!');
 }
-*/ 
+
 
 
 //The conditional Operator (Ternary Operator) 
@@ -436,3 +436,23 @@ age >= 18 ? console.log('I like to drink wine.') : console.log('I like to drink 
 
 const drink = age >= 18 ? 'wine' : 'water';
 console.log(drink);
+
+//Same thing worked out using if/esle statement. 
+let drink2;
+if(age >=18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
+console.log(drink2);
+
+// Because ternary operator is an expression, we can use it within a template literal. Whereas you cannot do this with if/else statements as they are not expressions. 
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water' }`);
+
+*/ 
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+//output string: 'The bull was 275, the tip was 41.25, and the total value 316.25'
