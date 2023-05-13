@@ -386,7 +386,7 @@ if (dolphinScoreAverage > koalaScoreAverage && dolphinScoreAverage >= 100) {
 
 */ 
 
-const day = 'saturday';
+const day = 'tuesday';
 
 switch (day) {
 case 'monday': // day === 'monday'
@@ -420,7 +420,7 @@ if (day === 'monday'){
     console.log('Write code examples');
 } else if (day === 'friday'){
     console.log('Record vidoes');
-} else if (day === 'saturday' || day === 'sunday'); {
+} else if (day === 'saturday' || day === 'sunday') {
     console.log('Enjoy the weekend! :D');
 } else {
     console.log('Not a valid day!');
