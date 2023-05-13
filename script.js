@@ -384,7 +384,7 @@ if (dolphinScoreAverage > koalaScoreAverage && dolphinScoreAverage >= 100) {
 // 2. determine amount of numbers 
 // 3. divie the sum by the total numbers ( 
 
-*/ 
+
 
 const day = 'tuesday';
 
@@ -425,3 +425,10 @@ if (day === 'monday'){
 } else {
     console.log('Not a valid day!');
 }
+*/ 
+
+
+//The conditional Operator (Ternary Operator) 
+
+const age = 23 
+age >= 18 ? console.log('I like to drink wine.') : console.log('I like to drink water.');
