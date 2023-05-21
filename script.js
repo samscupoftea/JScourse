@@ -450,9 +450,146 @@ console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? 'wine' : 'water' }`);
 
-*/ 
+
 const bill = 275;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}.`);
 
 //output string: 'The bull was 275, the tip was 41.25, and the total value 316.25'
+
+*/ 
+
+'use strict';
+/*
+let hasDriversLicense = false;
+const passTest = true;
+
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log('I can drive :D');
+
+// const interface = 'Audio';
+// const interface = 'Audio';
+
+/*
+
+
+// Everything within the curley braces is called a function buddy. This details what the function will actually do. 
+function logger() {
+    console.log('My name is Jonas');
+}
+//This is called UNVOKING THE FUNCTION, RUNNING THE FUNCTION, CALLING THE FUNCTION. 
+logger();
+logger();
+logger();
+//When we use functions, we can pass data and return data through the function. Imagine function to be like a food processor. 
+
+function fruitProcessor(apples, oranges) {
+    console.log(apples, oranges);
+    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+    return juice;
+}
+
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
+
+// Function declaration 
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1991);
+console.log(age1);
+
+//Function expression 
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+console.log(age1, age2);
+
+
+// Function Expression 
+// const calcAge2 = function (birthYear) {
+
+// return 2037 = birthYear;
+// }
+
+// Arrow function 
+const calcAge3 = birthYear => 2037 - birthYear;
+//The above does what the function expression does but without having to say return and without curley braces. 
+//Here is a function for more variables. You must also wrap for using birthYear and firstName. 
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    //return retirement;
+    return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1990, 'Sam'));
+console.log(yearsUntilRetirement(1980, 'Bob'));
+
+
+//Now lets make the fruit processor can only make fruit with smaller pieces. Make a machine that first cuts the fruit into smaller pieces. 
+//Function that cuts fruit into 4 pieces.  
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+
+
+function fruitProcessor(apples, oranges) {
+   const applePieces =  cutFruitPieces(apples);
+   const orangePieces = cutFruitPieces(oranges);
+    console.log(apples, oranges);
+    const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+    return juice;
+}
+
+
+const fruitPieces = fruitProcessor(2, 3);
+console.log(fruitPieces);
+*/
+//Coding Challenge Number 1 
+/*
+1.Create arrow function called 'calcAverage to calculate the average of 3 scores/ 
+2. Use the function to calculate the average for both teams. 
+3. Create a function 'checkWinner' that takes average score of each team as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, "Koalas win (30 vs. 13)". 
+4. Use 'checkWinner' function to determine the winner for both DATA 1 and DATA 2. 
+5. Ignore draws this time. 
+
+TEST DATA 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49. 
+TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27. 
+*/
+
+
+
+// Arrow function 
+
+const calcAverage = (number1, number2, number3) => (number1 + number2 + number3) / 3; 
+console.log (calcAverage(44,23,71));
+
+//Test 1 
+const scoreDolphins = calcAverage(44,23,71);
+const scoreKoalas = calcAverage(85, 54, 41);
+console.log(scoreDolphins,scoreKoalas);
+
+//Function expression 
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    } else if ()
+  
+
+
+//The above does what the function expression does but without having to say return and without curley braces. 
+//Here is a function for more variables. You must also wrap for using birthYear and firstName. 
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2037 - birthYear;
+//     const retirement = 65 - age;
+//     //return retirement;
+//     return `${firstName} retires in ${retirement} years`;
+// }
