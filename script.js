@@ -569,19 +569,19 @@ TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27.
 
 // Arrow function 
 
-const calcAverage = (number1, number2, number3) => (number1 + number2 + number3) / 3; 
-console.log (calcAverage(44,23,71));
+// const calcAverage = (number1, number2, number3) => (number1 + number2 + number3) / 3; 
+// console.log (calcAverage(44,23,71));
 
-//Test 1 
-const scoreDolphins = calcAverage(44,23,71);
-const scoreKoalas = calcAverage(85, 54, 41);
-console.log(scoreDolphins,scoreKoalas);
+// //Test 1 
+// const scoreDolphins = calcAverage(44,23,71);
+// const scoreKoalas = calcAverage(85, 54, 41);
+// console.log(scoreDolphins,scoreKoalas);
 
-//Function expression 
-const checkWinner = function (avgDolphins, avgKoalas) {
-    if (avgDolphins >= 2 * avgKoalas) {
-        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
-    } else if ()
+// //Function expression 
+// const checkWinner = function (avgDolphins, avgKoalas) {
+//     if (avgDolphins >= 2 * avgKoalas) {
+//         console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+//     } else if ()
   
 
 
@@ -593,3 +593,12 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 //     //return retirement;
 //     return `${firstName} retires in ${retirement} years`;
 // }
+
+
+//Arrays. This is an example of why arrays are useful. This list is slow and clumsy. 
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter'; 
+// How to write a simple array. 
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
