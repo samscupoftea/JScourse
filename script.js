@@ -594,11 +594,36 @@ TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27.
 //     return `${firstName} retires in ${retirement} years`;
 // }
 
+//Coding Challenge #1 
 
-//Arrays. This is an example of why arrays are useful. This list is slow and clumsy. 
-const friend1 = 'Michael';
-const friend2 = 'Steven';
-const friend3 = 'Peter'; 
-// How to write a simple array. 
-const friends = ['Michael', 'Steven', 'Peter'];
-console.log(friends);
+/*
+Back to the two gymnastics teams, the Dolphins and Koalas! There is a new gymnasitcs discipline, which works differently. Each team competes 3 times, and then average of the 3 scores is calculated (so one average score per team). 
+A team ONLY wios if it has at least DOUBLE the average score of the other team. Otherwise, no team wins! 
+
+1. Create and arrow function 'calcuAverage' to calculate the average of 3 scores.
+2. Use the funciton to calculate the average for both teams. 
+3. Create a function 'CheckWinner' that taks the average score of each team as parameters ('avgDoplins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, according to the rule above. Example: "Koalas win (30 vs. 13)".
+4. Use 'checkWinner' function to determine the winner for both DATA 1 and DATA 2. 
+5. Ignore draws this time. 
+
+TEST DATA 1: Doplhins score 44, 23 and 71. 
+Koalas score 65, 54 and 49. 
+TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27. 
+HINT: To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores. 
+
+*/
+
+
+
+
+
+
+
+
+// //Arrays. This is an example of why arrays are useful. This list is slow and clumsy. 
+// const friend1 = 'Michael';
+// const friend2 = 'Steven';
+// const friend3 = 'Peter'; 
+// // How to write a simple array. 
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
