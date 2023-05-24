@@ -618,9 +618,9 @@ console.log (calcuAverage(1, 5, 10));
 
 //Test 1 
 const scoreDolphins = calcuAverage(44,23,71);
-console.log (scoreDolphins);
+console.log (`The average score for the dolphins is ${scoreDolphins}.`);
 const scoreKoalas = calcuAverage(65,54,49);
-console.log (scoreKoalas);
+console.log (`The average score for the dolphins is ${scoreKoalas}.`);
 
 
 
