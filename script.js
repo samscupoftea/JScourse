@@ -614,9 +614,13 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B. Ap
 */
 
 const calcuAverage = (a, b, c ) => (a + b + c) / 3; 
+console.log (calcuAverage(1, 5, 10));
 
-
-
+//Test 1 
+const scoreDolphins = calcuAverage(44,23,71);
+console.log (scoreDolphins);
+const scoreKoalas = calcuAverage(65,54,49);
+console.log (scoreKoalas);
 
 
 
