@@ -627,14 +627,16 @@ console.log (`The average score for the dolphins is ${scoreKoalas}.`);
 
 const checkWinner = function (avgDolphins, avgKoalas)
 {
-    if (avgDolhins >= 2 * avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
         console.log (`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
-    } else if (avgKoalas >= 2 * avgDolhins) {
+    } else if (avgKoalas >= 2 * avgDolphins) {
         console.log (`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
     } else {
         console.log ('No team wins...');
     }
 }
+checkWinner(scoreDolphins, scoreKoalas);
+
 
 // //Arrays. This is an example of why arrays are useful. This list is slow and clumsy. 
 // const friend1 = 'Michael';
