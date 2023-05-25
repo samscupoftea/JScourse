@@ -649,15 +649,30 @@ checkWinner(10050, 1);
 
 //Arrays intro
 
+// const friend1 = 'Michael';
+// const friend2 = 'Steven';
+// const friend3 = 'Peter';
+
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020);
+// // arrays order from 0, 1, 2, 3 etc. So to call the first on the array list you should use 0. 
+// console.log(friends[0]);
+// console.log(friends[1]);
+// console.log(friends[2]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+
 const friend1 = 'Michael';
 const friend2 = 'Steven';
 const friend3 = 'Peter';
-
-const friends = ['Michael', 'Steven', 'Peter'];
+const friend4 = 'David';
+const friend5 = 'William';
+const friend6 = 'John';
+const friends = ['Michael', 'Steven', 'Peter', 'David', 'William', 'John'];
 console.log(friends);
-
-const years = new Array(1991, 1984, 2008, 2020);
-
-console.log(friends[0]);
-console.log(friends[1]);
-console.log(friends[2ß]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
