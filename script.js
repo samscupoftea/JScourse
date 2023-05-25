@@ -457,7 +457,7 @@ console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bil
 
 //output string: 'The bull was 275, the tip was 41.25, and the total value 316.25'
 
-*/ 
+*/
 
 'use strict';
 /*
@@ -582,7 +582,7 @@ TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27.
 //     if (avgDolphins >= 2 * avgKoalas) {
 //         console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
 //     } else if ()
-  
+
 
 
 //The above does what the function expression does but without having to say return and without curley braces. 
@@ -611,7 +611,7 @@ Koalas score 65, 54 and 49.
 TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27. 
 HINT: To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores. 
 
-*/
+
 
 const calcuAverage = (a, b, c ) => (a + b + c) / 3; 
 console.log (calcuAverage(1, 5, 10));
@@ -635,7 +635,7 @@ const checkWinner = function (avgDolphins, avgKoalas)
         console.log ('No team wins...');
     }
 }
-checkWinner(scoreDolphins, scoreKoalas);
+checkWinner(10050, 1);
 
 
 // //Arrays. This is an example of why arrays are useful. This list is slow and clumsy. 
@@ -645,3 +645,15 @@ checkWinner(scoreDolphins, scoreKoalas);
 // // How to write a simple array. 
 // const friends = ['Michael', 'Steven', 'Peter'];
 // console.log(friends);
+*/
+
+//Arrays intro
+
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
