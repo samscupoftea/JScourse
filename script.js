@@ -674,5 +674,19 @@ const friend5 = 'William';
 const friend6 = 'John';
 const friends = ['Michael', 'Steven', 'Peter', 'David', 'William', 'John'];
 console.log(friends);
+console.log(friends[0]);
+console.log(friends[1]);
 console.log(friends.length);
-console.log(friends[friends.length - 1]);
+console.log(friends[friends.length - 1])
+
+//Below you can change expressions within the array itself. In this case, i changed PETER to JAY. 
+friends[2] = 'Jay';
+console.log(friends);
+//friends = ['Bob', 'Alice']
+
+const firstName = 'Jonas';
+const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991,
+    'teacher', friends]
+console.log(jonas);
+
+
