@@ -709,7 +709,7 @@ console.log(age1, age2, age3, age4, age5, age6);
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
 
-*/
+
 
 const friends = ['Michael', 'Steven', 'Peter'];
 
@@ -736,3 +736,25 @@ console.log(friends);
 console.log(friends.indexOf('Steven'));
 
 console.log(friends.includes('Steven')); // This checks whether or not that written element is in the specified array. 
+console.log(friends.includes(23));
+
+if (friends.includes('Peter')) {
+    console.log('You have a friend called Peter.');
+} else {
+    console.log('Peter never existed! He is just a mere phantom of the MIND!');
+}
+
+*/
+
+/////////////////////////////////////////
+// CODING CHALLENGE #2 
+
+
+
+//1, WRITE FUNCTION CALLED 'calcTip'
+
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+}
