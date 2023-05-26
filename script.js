@@ -725,3 +725,6 @@ console.log(friends);
 
 // Remove elements 
 friends.pop(); // this removes the last element in an array
+console.log(friends); // here we can now see that it removed jay, the last element in the array. 
+const popped = friends.pop();
+console.log(popped);
