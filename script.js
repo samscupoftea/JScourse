@@ -728,3 +728,11 @@ friends.pop(); // this removes the last element in an array
 console.log(friends); // here we can now see that it removed jay, the last element in the array. 
 const popped = friends.pop();
 console.log(popped);
+console.log(friends);
+
+friends.shift(); // this removes the FIRST element in an array 
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+
+console.log(friends.includes('Steven')); // This checks whether or not that written element is in the specified array. 
