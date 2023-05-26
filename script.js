@@ -645,7 +645,7 @@ checkWinner(10050, 1);
 // // How to write a simple array. 
 // const friends = ['Michael', 'Steven', 'Peter'];
 // console.log(friends);
-*/
+
 
 //Arrays intro
 
@@ -708,3 +708,20 @@ console.log(age1, age2, age3, age4, age5, age6);
 //Here we are using a calculation on elements in the array and putting it all together. 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+
+*/
+
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add elements - This adds Jay into the existing FRIENDS array. 
+const newLength = friends.push('Jay');
+// console logs the new array
+console.log(friends);
+// tells me how many elements are now in the updated array since using push
+console.log(newLength);
+// unshift adds a new element but to the START if the array. 
+friends.unshift('John');
+console.log(friends);
+
+// Remove elements 
+friends.pop(); // this removes the last element in an array
