@@ -759,7 +759,12 @@ if (friends.includes('Peter')) {
 const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
-
+// Create an array called bills with all the bill values
 const bills = [125, 555, 44];
+// Now, create an array called 'tips' containing the tip value for each bill, calculated from the function you created before. 
 const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tip);
+// Create TOTAL array which will be the bill + tips. 
 
+const total = [(bills)[0] + (tip[0]), (bills)[1] + (tip)[1], (bills)[2] + (tip)[2]];
+console.log(total);
