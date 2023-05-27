@@ -473,15 +473,15 @@ if (hasDriversLicense) console.log('I can drive :D');
 /*
 
 
-// Everything within the curley braces is called a function buddy. This details what the function will actually do. 
+// Everything within the curley braces is called a function buddy. This details what the function will actually do.
 function logger() {
     console.log('My name is Jonas');
 }
-//This is called UNVOKING THE FUNCTION, RUNNING THE FUNCTION, CALLING THE FUNCTION. 
+//This is called UNVOKING THE FUNCTION, RUNNING THE FUNCTION, CALLING THE FUNCTION.
 logger();
 logger();
 logger();
-//When we use functions, we can pass data and return data through the function. Imagine function to be like a food processor. 
+//When we use functions, we can pass data and return data through the function. Imagine function to be like a food processor.
 
 function fruitProcessor(apples, oranges) {
     console.log(apples, oranges);
@@ -495,7 +495,7 @@ console.log(appleJuice);
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
-// Function declaration 
+// Function declaration
 function calcAge1(birthYear) {
     return 2037 - birthYear;
 }
@@ -503,7 +503,7 @@ function calcAge1(birthYear) {
 const age1 = calcAge1(1991);
 console.log(age1);
 
-//Function expression 
+//Function expression
 const calcAge2 = function (birthYear) {
     return 2037 - birthYear;
 }
@@ -511,16 +511,16 @@ const age2 = calcAge2(1991);
 console.log(age1, age2);
 
 
-// Function Expression 
+// Function Expression
 // const calcAge2 = function (birthYear) {
 
 // return 2037 = birthYear;
 // }
 
-// Arrow function 
+// Arrow function
 const calcAge3 = birthYear => 2037 - birthYear;
-//The above does what the function expression does but without having to say return and without curley braces. 
-//Here is a function for more variables. You must also wrap for using birthYear and firstName. 
+//The above does what the function expression does but without having to say return and without curley braces.
+//Here is a function for more variables. You must also wrap for using birthYear and firstName.
 const yearsUntilRetirement = (birthYear, firstName) => {
     const age = 2037 - birthYear;
     const retirement = 65 - age;
@@ -532,8 +532,8 @@ console.log(yearsUntilRetirement(1990, 'Sam'));
 console.log(yearsUntilRetirement(1980, 'Bob'));
 
 
-//Now lets make the fruit processor can only make fruit with smaller pieces. Make a machine that first cuts the fruit into smaller pieces. 
-//Function that cuts fruit into 4 pieces.  
+//Now lets make the fruit processor can only make fruit with smaller pieces. Make a machine that first cuts the fruit into smaller pieces.
+//Function that cuts fruit into 4 pieces.
 
 function cutFruitPieces(fruit) {
     return fruit * 4;
@@ -555,14 +555,14 @@ console.log(fruitPieces);
 */
 //Coding Challenge Number 1 
 /*
-1.Create arrow function called 'calcAverage to calculate the average of 3 scores/ 
-2. Use the function to calculate the average for both teams. 
-3. Create a function 'checkWinner' that takes average score of each team as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, "Koalas win (30 vs. 13)". 
-4. Use 'checkWinner' function to determine the winner for both DATA 1 and DATA 2. 
-5. Ignore draws this time. 
+1.Create arrow function called 'calcAverage to calculate the average of 3 scores/
+2. Use the function to calculate the average for both teams.
+3. Create a function 'checkWinner' that takes average score of each team as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, "Koalas win (30 vs. 13)".
+4. Use 'checkWinner' function to determine the winner for both DATA 1 and DATA 2.
+5. Ignore draws this time.
 
-TEST DATA 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49. 
-TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27. 
+TEST DATA 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49.
+TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27.
 */
 
 
@@ -744,7 +744,7 @@ if (friends.includes('Peter')) {
     console.log('Peter never existed! He is just a mere phantom of the MIND!');
 }
 
-*/
+
 
 /////////////////////////////////////////
 // CODING CHALLENGE #2 
@@ -768,3 +768,21 @@ console.log(tip);
 
 const total = [(bills)[0] + (tip[0]), (bills)[1] + (tip)[1], (bills)[2] + (tip)[2]];
 console.log(total);
+*/
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+console.log(jonas[0]); 
