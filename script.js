@@ -795,3 +795,31 @@ console.log(jonas.friends);
 const nameKey = 'Name';
 console.log(jonas['first' + nameKey]);
 console.log(jonas['last' + nameKey]);
+
+// console.log(jonas.'last' + nameKey)
+
+const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends');
+
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
+}
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonasschedtman';
+console.log(jonas);
+
+// Challenge 
+// "Jonas has 3 friends, and his best friend is called Michael"
+console.log(`${jonas.firstName} has ${jonas.length}`)
+
+// function invertTree(node) {
+//     let left = node.left
+//     let right = node.right
+//     node.right = left
+//     node.left = right
+//     invertTree(left)
+//     invertTree(right)
+// }
