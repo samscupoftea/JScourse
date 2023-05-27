@@ -784,5 +784,14 @@ const jonas = {
     job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven']
 };
+// use dot notation to call the specific catergories within the array. 
+console.log(jonas);
+console.log(jonas.lastName);
 
-console.log(jonas[0]); 
+console.log(jonas['lastName']);
+
+console.log(jonas.friends);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
