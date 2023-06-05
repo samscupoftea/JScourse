@@ -833,13 +833,30 @@ const jonas = [
     'Shmedtmann',
     2037 - 1991,
     'teacher',
-    ['Michael', 'Peter', 'Steven']
+    ['Michael', 'Peter', 'Steven'],
     true
+
 ];
 
+const types = [];
 console.log(jonas[0]);
 console.log(jonas[1]);
 
 for (let i = 0; i < jonas.length; i++) {
-    console.log(jonas[1], typeof jonas[1]);
+    // reading from jonas array
+    console.log(jonas[i], typeof jonas[i]);
+
+
+    // filling types array
+    // types[i] = typeof jonas[i];
+    types.push(typeof jonas[i]);
+
+
 }
+
+
+// create a new array that contains each types of the elements. 
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];

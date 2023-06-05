@@ -8,15 +8,14 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
+            "url": "file:///Users/samuelhockaday/Desktop/Founders%20and%20Coders%20/JScourse/index.html","webRoot": "${workspaceFolder
+            }"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
             "url": "file:///Users/samuelhockaday/Desktop/Founders%20and%20Coders%20/JavaScript%20Practice/index.html",
             "webRoot": "file:///Users/samuelhockaday/Desktop/Founders%20and%20Coders%20/JavaScript%20Practice/index.html"
         },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "file:///Users/samuelhockaday/Desktop/Founders%20and%20Coders%20/starter/index.html",
-            "webRoot": "${workspaceFolder}"
-        }
-    ]
-}
+    }
