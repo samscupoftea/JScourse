@@ -834,7 +834,12 @@ const jonas = [
     2037 - 1991,
     'teacher',
     ['Michael', 'Peter', 'Steven']
+    true
 ];
 
 console.log(jonas[0]);
 console.log(jonas[1]);
+
+for (let i = 0; i < jonas.length; i++) {
+    console.log(jonas[1]);
+}
