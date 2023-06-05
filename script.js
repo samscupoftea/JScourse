@@ -769,62 +769,62 @@ console.log(tip);
 const total = [(bills)[0] + (tip[0]), (bills)[1] + (tip)[1], (bills)[2] + (tip)[2]];
 console.log(total);
 */
-const jonasArray = [
-    'Jonas',
-    'Schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven']
-];
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven']
+// ];
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    age: 2037 - 1991,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven']
-};
-// use dot notation to call the specific catergories within the array. 
-console.log(jonas);
-console.log(jonas.lastName);
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven']
+// };
+// // use dot notation to call the specific catergories within the array. 
+// console.log(jonas);
+// console.log(jonas.lastName);
 
-console.log(jonas['lastName']);
+// console.log(jonas['lastName']);
 
-console.log(jonas.friends);
+// console.log(jonas.friends);
 
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
 
-// console.log(jonas.'last' + nameKey)
+// // console.log(jonas.'last' + nameKey)
 
-const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends');
+// const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends');
 
-if (jonas[interestedIn]) {
-    console.log(jonas[interestedIn]);
+// if (jonas[interestedIn]) {
+//     console.log(jonas[interestedIn]);
 
-} else {
-    console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
-}
-
-jonas.location = 'Portugal';
-jonas['twitter'] = '@jonasschedtman';
-console.log(jonas);
-
-// Challenge 
-// "Jonas has 3 friends, and his best friend is called Michael"
-console.log(`${jonas.firstName} has ${jonas.length}`)
-
-// function invertTree(node) {
-//     let left = node.left
-//     let right = node.right
-//     node.right = left
-//     node.left = right
-//     invertTree(left)
-//     invertTree(right)
+// } else {
+//     console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
 // }
 
-console, log(array[1]);
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@jonasschedtman';
+// console.log(jonas);
+
+// // Challenge 
+// // "Jonas has 3 friends, and his best friend is called Michael"
+// console.log(`${jonas.firstName} has ${jonas.length}`)
+
+// // function invertTree(node) {
+// //     let left = node.left
+// //     let right = node.right
+// //     node.right = left
+// //     node.left = right
+// //     invertTree(left)
+// //     invertTree(right)
+// // }
+
+// console, log(array[1]);
 
 //USING FOR LOOPS IN ARRAYS
 
