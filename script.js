@@ -825,3 +825,15 @@ console.log(`${jonas.firstName} has ${jonas.length}`)
 // }
 
 console, log(array[1]);
+
+//USING FOR LOOPS IN ARRAYS
+
+const jonas = [
+    'Jonas',
+    'Shmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+console.log(jonas[0]);
