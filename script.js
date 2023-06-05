@@ -837,3 +837,4 @@ const jonas = [
 ];
 
 console.log(jonas[0]);
+console.log(jonas[1]);
