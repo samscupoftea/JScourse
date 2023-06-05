@@ -756,77 +756,131 @@ if (friends.includes('Peter')) {
 
 //Here is the funciton called calcTip. 
 // We use a ternary operator ? as it is one simple peramteter. 
-const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
-// Create an array called bills with all the bill values
-const bills = [125, 555, 44];
-// Now, create an array called 'tips' containing the tip value for each bill, calculated from the function you created before. 
-const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-console.log(tip);
-// Create TOTAL array which will be the bill + tips. 
-
-const total = [(bills)[0] + (tip[0]), (bills)[1] + (tip)[1], (bills)[2] + (tip)[2]];
-console.log(total);
-*/
-// const jonasArray = [
-//     'Jonas',
-//     'Schmedtmann',
-//     2037 - 1991,
-//     'teacher',
-//     ['Michael', 'Peter', 'Steven']
-// ];
-
-// const jonas = {
-//     firstName: 'Jonas',
-//     lastName: 'Schmedtmann',
-//     age: 2037 - 1991,
-//     job: 'teacher',
-//     friends: ['Michael', 'Peter', 'Steven']
-// };
-// // use dot notation to call the specific catergories within the array. 
-// console.log(jonas);
-// console.log(jonas.lastName);
-
-// console.log(jonas['lastName']);
-
-// console.log(jonas.friends);
-
-// const nameKey = 'Name';
-// console.log(jonas['first' + nameKey]);
-// console.log(jonas['last' + nameKey]);
-
-// // console.log(jonas.'last' + nameKey)
-
-// const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends');
-
-// if (jonas[interestedIn]) {
-//     console.log(jonas[interestedIn]);
-
-// } else {
-//     console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 // }
+// // Create an array called bills with all the bill values
+// const bills = [125, 555, 44];
+// // Now, create an array called 'tips' containing the tip value for each bill, calculated from the function you created before. 
+// const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// console.log(tip);
+// // Create TOTAL array which will be the bill + tips. 
 
-// jonas.location = 'Portugal';
-// jonas['twitter'] = '@jonasschedtman';
-// console.log(jonas);
+// const total = [(bills)[0] + (tip[0]), (bills)[1] + (tip)[1], (bills)[2] + (tip)[2]];
+// console.log(total);
+// */
+// // const jonasArray = [
+// //     'Jonas',
+// //     'Schmedtmann',
+// //     2037 - 1991,
+// //     'teacher',
+// //     ['Michael', 'Peter', 'Steven']
+// // ];
 
-// // Challenge 
-// // "Jonas has 3 friends, and his best friend is called Michael"
-// console.log(`${jonas.firstName} has ${jonas.length}`)
+// // const jonas = {
+// //     firstName: 'Jonas',
+// //     lastName: 'Schmedtmann',
+// //     age: 2037 - 1991,
+// //     job: 'teacher',
+// //     friends: ['Michael', 'Peter', 'Steven']
+// // };
+// // // use dot notation to call the specific catergories within the array. 
+// // console.log(jonas);
+// // console.log(jonas.lastName);
 
-// // function invertTree(node) {
-// //     let left = node.left
-// //     let right = node.right
-// //     node.right = left
-// //     node.left = right
-// //     invertTree(left)
-// //     invertTree(right)
+// // console.log(jonas['lastName']);
+
+// // console.log(jonas.friends);
+
+// // const nameKey = 'Name';
+// // console.log(jonas['first' + nameKey]);
+// // console.log(jonas['last' + nameKey]);
+
+// // // console.log(jonas.'last' + nameKey)
+
+// // const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends');
+
+// // if (jonas[interestedIn]) {
+// //     console.log(jonas[interestedIn]);
+
+// // } else {
+// //     console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
 // // }
 
-// console, log(array[1]);
+// // jonas.location = 'Portugal';
+// // jonas['twitter'] = '@jonasschedtman';
+// // console.log(jonas);
 
-//USING FOR LOOPS IN ARRAYS
+// // // Challenge 
+// // // "Jonas has 3 friends, and his best friend is called Michael"
+// // console.log(`${jonas.firstName} has ${jonas.length}`)
+
+// // // function invertTree(node) {
+// // //     let left = node.left
+// // //     let right = node.right
+// // //     node.right = left
+// // //     node.left = right
+// // //     invertTree(left)
+// // //     invertTree(right)
+// // // }
+
+// // console, log(array[1]);
+
+// //USING FOR LOOPS IN ARRAYS
+
+// const jonas = [
+//     'Jonas',
+//     'Shmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven'],
+//     true
+
+// ];
+
+// const types = [];
+// console.log(jonas[0]);
+// console.log(jonas[1]);
+
+// for (let i = 0; i < jonas.length; i++) {
+//     // reading from jonas array
+//     console.log(jonas[i], typeof jonas[i]);
+
+
+//     // filling types array
+//     // types[i] = typeof jonas[i];
+//     types.push(typeof jonas[i]);
+
+
+// }
+
+
+// // create a new array that contains each types of the elements. 
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+// // continue and break 
+// console.log('-----  ONLY STRINGS -----')
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] !== 'string') continue;
+//     console.log(jonas[i], typeof jonas[i]);
+// }
+
+// console.log('-----  BREAK WITH NUMBER -----')
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] === 'number') continue;
+//     console.log(jonas[i], typeof jonas[i]);
+// }
+
+//FOR LOOPS WITHIN LOOPS 
 
 const jonas = [
     'Jonas',
@@ -837,46 +891,7 @@ const jonas = [
     true
 
 ];
-
-const types = [];
-console.log(jonas[0]);
-console.log(jonas[1]);
-
-for (let i = 0; i < jonas.length; i++) {
-    // reading from jonas array
-    console.log(jonas[i], typeof jonas[i]);
-
-
-    // filling types array
-    // types[i] = typeof jonas[i];
-    types.push(typeof jonas[i]);
-
-
+//THIS FOR LOOP COUNTS BACKWARDS IN THE JONAS ARRAY. 
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
 }
-
-
-// create a new array that contains each types of the elements. 
-
-console.log(types);
-
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
-
-for (let i = 0; i < years.length; i++) {
-    ages.push(2037 - years[i]);
-}
-console.log(ages);
-
-// continue and break 
-console.log('-----  ONLY STRINGS -----')
-for (let i = 0; i < jonas.length; i++) {
-    if (typeof jonas[i] !== 'string') continue;
-    console.log(jonas[i], typeof jonas[i]);
-}
-
-console.log('-----  BREAK WITH NUMBER -----')
-for (let i = 0; i < jonas.length; i++) {
-    if (typeof jonas[i] === 'number') continue;
-    console.log(jonas[i], typeof jonas[i]);
-}
-
