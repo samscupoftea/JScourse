@@ -823,3 +823,5 @@ console.log(`${jonas.firstName} has ${jonas.length}`)
 //     invertTree(left)
 //     invertTree(right)
 // }
+
+console, log(array[1]);
