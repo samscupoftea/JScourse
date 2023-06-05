@@ -841,5 +841,5 @@ console.log(jonas[0]);
 console.log(jonas[1]);
 
 for (let i = 0; i < jonas.length; i++) {
-    console.log(jonas[1]);
+    console.log(jonas[1], typeof jonas[1]);
 }
