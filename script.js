@@ -913,4 +913,11 @@ let rep = 1;
 while (rep <= 10) {
     console.log(`WHILE: Lifting weights repitition ${rep}`);
     rep++;
-} 
+}
+// Make a dice loop where it stops when it rolls a 6. 
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+}
