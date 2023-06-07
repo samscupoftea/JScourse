@@ -905,33 +905,143 @@ if (friends.includes('Peter')) {
 
 // }
 
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Lifting weights repitition ${rep}`);
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repitition ${rep}`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`WHILE: Lifting weights repitition ${rep}`);
+//     rep++;
+// }
+// // Make a dice loop where it stops when it rolls a 6. 
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repitition ${rep}`);
+// }
+
+
+// while (rep <= 10) {
+//     console.log(`WHILE: Lifting weights repitition ${rep}`);
+//     rep++;
+// }
+// // Make a dice loop where it stops when it rolls a 6. 
+
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('Loop is about to end...');
+// } 
+
+
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 51];
+// console.log(bills[6]);
+
+// const tips = bills + tips;
+
+// const calcTip = function (bills) {
+//     return bill + tips
+
+// }
+
+// for (let i = 0; i < bills.length; i++) {
+//     const tip = calT
+
+// }
+
+
+// function takeWhile(arr, pred) {
+//     // Your code here
+//     const arr = [2, 4, 6, 8, 1, 2, 5, 4, 3, 2];
+//     const pred = num % 2 === 0;
+//     if arr === pred {
+//         return
+//     }
+
+// };
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`WHILE: Lifting weights repitition ${rep}`);
+//     rep++;
+// }
+// // Make a dice loop where it stops when it rolls a 6. 
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repitition ${rep}`);
+// }
+
+
+// CODE WARS KATA SOLUTION 
+// function repeatStr(n, s) {
+
+//     return s.repeat(n);
+// }
+
+// console.log(repeatStr(15, "gagers"));
+
+
+
+// * Use the BMI example from Challenge 1, and the code you already wrote, and improve it: 
+
+// 1. Print a nice output to the console saying who has the higher BMI. The message can be either "Marks's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+// 2. Use template string to include the BMI values in the outputs, Example : "Mark's BMI (28.3) is higher thand John's (23.9)!"
+
+// HINT: Use if/else statement :) 
+
+
+
+const markWeightKg = 78;
+const markHeightM = 1.69;
+const johnWeightKg = 92;
+const johnHeightM = 1.95;
+
+// **2 means squared. 
+// const markBMI = markWeightKg / markHeightM ** 2;
+
+// const johnBMI = johnWeightKg / johnHeightM ** 2;
+// console.log(markBMI, johnBMI);
+
+// const markHigherBMI = markBMI > johnBMI;
+// console.log(markHigherBMI);
+
+// if (markBMI > johnBMI) {
+//     console.log(`Marks's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
+// } else {
+//     console.log(`John's BMI is higher than Mark's!`);
+// }
+
+
+
+
+
+function bmi(weight, height) {
+    const bmiValue = weight / height ** 2;
+    if (bmiValue <= 18.5) {
+        return "Underweight";
+    } else if (bmiValue <= 25.0) {
+        return "Normal";
+    } else if (bmiValue <= 30.0) {
+        return "Overweight";
+    } else {
+        return "Obese";
+    }
 }
 
-let rep = 1;
-while (rep <= 10) {
-    console.log(`WHILE: Lifting weights repitition ${rep}`);
-    rep++;
-}
-// Make a dice loop where it stops when it rolls a 6. 
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Lifting weights repitition ${rep}`);
-}
+console.log(bmi(120, "44"));
 
+// Simply mulitplicaiton KATA CODEWARS! 
 
-while (rep <= 10) {
-    console.log(`WHILE: Lifting weights repitition ${rep}`);
-    rep++;
-}
-// Make a dice loop where it stops when it rolls a 6. 
+const sumSquareEvenRootOdd = ns => {
+    if (ns % 2 === 0) {
+        return (ns * ns) && Math.round(ns * 100) / 100
+    } else {
+        return Math.sqrt(ns) && Math.round(ns * 100) / 100
 
-
-let dice = Math.trunc(Math.random() * 6) + 1;
-console.log(dice);
-
-while (dice !== 6) {
-    console.log(`You rolled a ${dice}`);
-    dice = Math.trunc(Math.random() * 6) + 1;
-    if (dice === 6) console.log('Loop is about to end...');
-} 
+    }
+    // your code goes here
+};
+console.log(sum)
