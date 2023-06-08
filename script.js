@@ -1019,7 +1019,17 @@ const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 // 3, Create array for totals. 
 const totals = [];
+// Make a for loop to to loop through each number in the BILLS array. Starts from 0 and should stop once it reaches the entire length of the array. Add i++ as we want to go one by one from one element to another. 
+for (let i = 0; i < bills.length; i++) {
+    //calculate tip using function and targetting each bill array element.
+    const tip = calcTip(bills[i]);
+    // now push that result into the new array that we called tip. 
+    tips.push(tip);
+    // Here we push the tip + bills for the total and push it to the totals array. 
+    totals.push(tip + bills[i]);
 
+}
+console.log(bills, tips, totals);
 
 
 
