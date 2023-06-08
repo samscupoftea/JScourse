@@ -597,26 +597,26 @@ TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27.
 //Coding Challenge #1 
 
 /*
-Back to the two gymnastics teams, the Dolphins and Koalas! There is a new gymnasitcs discipline, which works differently. Each team competes 3 times, and then average of the 3 scores is calculated (so one average score per team). 
-A team ONLY wios if it has at least DOUBLE the average score of the other team. Otherwise, no team wins! 
+Back to the two gymnastics teams, the Dolphins and Koalas! There is a new gymnasitcs discipline, which works differently. Each team competes 3 times, and then average of the 3 scores is calculated (so one average score per team).
+A team ONLY wios if it has at least DOUBLE the average score of the other team. Otherwise, no team wins!
 
 1. Create and arrow function 'calcuAverage' to calculate the average of 3 scores.
-2. Use the funciton to calculate the average for both teams. 
+2. Use the funciton to calculate the average for both teams.
 3. Create a function 'CheckWinner' that taks the average score of each team as parameters ('avgDoplins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, according to the rule above. Example: "Koalas win (30 vs. 13)".
-4. Use 'checkWinner' function to determine the winner for both DATA 1 and DATA 2. 
-5. Ignore draws this time. 
+4. Use 'checkWinner' function to determine the winner for both DATA 1 and DATA 2.
+5. Ignore draws this time.
 
-TEST DATA 1: Doplhins score 44, 23 and 71. 
-Koalas score 65, 54 and 49. 
-TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27. 
-HINT: To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores. 
+TEST DATA 1: Doplhins score 44, 23 and 71.
+Koalas score 65, 54 and 49.
+TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27.
+HINT: To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores.
 
 
 
-const calcuAverage = (a, b, c ) => (a + b + c) / 3; 
+const calcuAverage = (a, b, c ) => (a + b + c) / 3;
 console.log (calcuAverage(1, 5, 10));
 
-//Test 1 
+//Test 1
 const scoreDolphins = calcuAverage(44,23,71);
 console.log (`The average score for the dolphins is ${scoreDolphins}.`);
 const scoreKoalas = calcuAverage(65,54,49);
@@ -638,11 +638,11 @@ const checkWinner = function (avgDolphins, avgKoalas)
 checkWinner(10050, 1);
 
 
-// //Arrays. This is an example of why arrays are useful. This list is slow and clumsy. 
+// //Arrays. This is an example of why arrays are useful. This list is slow and clumsy.
 // const friend1 = 'Michael';
 // const friend2 = 'Steven';
-// const friend3 = 'Peter'; 
-// // How to write a simple array. 
+// const friend3 = 'Peter';
+// // How to write a simple array.
 // const friends = ['Michael', 'Steven', 'Peter'];
 // console.log(friends);
 
@@ -657,7 +657,7 @@ checkWinner(10050, 1);
 // console.log(friends);
 
 // const years = new Array(1991, 1984, 2008, 2020);
-// // arrays order from 0, 1, 2, 3 etc. So to call the first on the array list you should use 0. 
+// // arrays order from 0, 1, 2, 3 etc. So to call the first on the array list you should use 0.
 // console.log(friends[0]);
 // console.log(friends[1]);
 // console.log(friends[2]);
@@ -679,7 +679,7 @@ console.log(friends[1]);
 console.log(friends.length);
 console.log(friends[friends.length - 1])
 
-//Below you can change expressions within the array itself. In this case, i changed PETER to JAY. 
+//Below you can change expressions within the array itself. In this case, i changed PETER to JAY.
 friends[2] = 'Jay';
 console.log(friends);
 //friends = ['Bob', 'Alice']
@@ -690,7 +690,7 @@ const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991,
 console.log(jonas);
 console.log(jonas.length);
 
-// Excercise 
+// Excercise
 
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
@@ -705,7 +705,7 @@ const age5 = calcAge(years[4]);
 const age6 = calcAge(years[years.length - 1]);
 console.log(age1, age2, age3, age4, age5, age6);
 
-//Here we are using a calculation on elements in the array and putting it all together. 
+//Here we are using a calculation on elements in the array and putting it all together.
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
 
@@ -713,29 +713,29 @@ console.log(ages);
 
 const friends = ['Michael', 'Steven', 'Peter'];
 
-// Add elements - This adds Jay into the existing FRIENDS array. 
+// Add elements - This adds Jay into the existing FRIENDS array.
 const newLength = friends.push('Jay');
 // console logs the new array
 console.log(friends);
 // tells me how many elements are now in the updated array since using push
 console.log(newLength);
-// unshift adds a new element but to the START if the array. 
+// unshift adds a new element but to the START if the array.
 friends.unshift('John');
 console.log(friends);
 
-// Remove elements 
+// Remove elements
 friends.pop(); // this removes the last element in an array
-console.log(friends); // here we can now see that it removed jay, the last element in the array. 
+console.log(friends); // here we can now see that it removed jay, the last element in the array.
 const popped = friends.pop();
 console.log(popped);
 console.log(friends);
 
-friends.shift(); // this removes the FIRST element in an array 
+friends.shift(); // this removes the FIRST element in an array
 console.log(friends);
 
 console.log(friends.indexOf('Steven'));
 
-console.log(friends.includes('Steven')); // This checks whether or not that written element is in the specified array. 
+console.log(friends.includes('Steven')); // This checks whether or not that written element is in the specified array.
 console.log(friends.includes(23));
 
 if (friends.includes('Peter')) {
@@ -747,24 +747,24 @@ if (friends.includes('Peter')) {
 
 
 /////////////////////////////////////////
-// CODING CHALLENGE #2 
+// CODING CHALLENGE #2
 
 
 
 //1, WRITE FUNCTION CALLED 'calcTip'
 
 
-//Here is the funciton called calcTip. 
-// We use a ternary operator ? as it is one simple peramteter. 
+//Here is the funciton called calcTip.
+// We use a ternary operator ? as it is one simple peramteter.
 // const calcTip = function (bill) {
 //     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 // }
 // // Create an array called bills with all the bill values
 // const bills = [125, 555, 44];
-// // Now, create an array called 'tips' containing the tip value for each bill, calculated from the function you created before. 
+// // Now, create an array called 'tips' containing the tip value for each bill, calculated from the function you created before.
 // const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 // console.log(tip);
-// // Create TOTAL array which will be the bill + tips. 
+// // Create TOTAL array which will be the bill + tips.
 
 // const total = [(bills)[0] + (tip[0]), (bills)[1] + (tip)[1], (bills)[2] + (tip)[2]];
 // console.log(total);
@@ -994,54 +994,48 @@ if (friends.includes('Peter')) {
 
 
 
-const markWeightKg = 78;
-const markHeightM = 1.69;
-const johnWeightKg = 92;
-const johnHeightM = 1.95;
+// CHALLENGE #4
+// Let's improve Steven's tip calculator even more, this time using loops!
 
-// **2 means squared. 
-// const markBMI = markWeightKg / markHeightM ** 2;
+// Your tasks:
 
-// const johnBMI = johnWeightKg / johnHeightM ** 2;
-// console.log(markBMI, johnBMI);
+// Create an array called bills containing all 10 test bill values.
 
-// const markHigherBMI = markBMI > johnBMI;
-// console.log(markHigherBMI);
+// Create empty arrays for the tips and the totals (tips and totals)
 
-// if (markBMI > johnBMI) {
-//     console.log(`Marks's BMI (${markBMI}) is higher than John's (${johnBMI})!`);
-// } else {
-//     console.log(`John's BMI is higher than Mark's!`);
-// }
+// Use the calcTip function we wrote before (included in the starter code) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
 
 
 
-
-
-function bmi(weight, height) {
-    const bmiValue = weight / height ** 2;
-    if (bmiValue <= 18.5) {
-        return "Underweight";
-    } else if (bmiValue <= 25.0) {
-        return "Normal";
-    } else if (bmiValue <= 30.0) {
-        return "Overweight";
-    } else {
-        return "Obese";
-    }
+// TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86, and 52.
+// Tip Calculator Function from earlier lessons. 
+const calTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
+// 1. Create an array to hold bills called bulls 
 
-console.log(bmi(120, "44"));
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// 2. Create array for tips
+const tips = [];
+// 3, Create array for totals. 
+const totals = [];
 
-// Simply mulitplicaiton KATA CODEWARS! 
 
-const sumSquareEvenRootOdd = ns => {
-    if (ns % 2 === 0) {
-        return (ns * ns) && Math.round(ns * 100) / 100
-    } else {
-        return Math.sqrt(ns) && Math.round(ns * 100) / 100
 
-    }
-    // your code goes here
-};
-console.log(sum)
+
+
+
+
+// BONUS:
+
+// Write a function calcAverage which takes an array called arr as an argument. This function calculates the average of all numbers in the given array. This is a DIFFICULT challenge (we haven't done this before)! Here is how to solve it if you feel like it:
+
+// First, you will need to add up all values in the array. To do the addition, start by creating a variable sum that starts at 0. Then loop over the array using a for loop. In each iteration, add the current value to the sum variable. This way, by the end of the loop, you have all values added together.
+
+// To calculate the average, divide the sum you calculated before by the length of the array (because that's the number of elements).
+
+// Call the function with the totals array.
+
+
+
+// 👋 OPTIONAL: You can watch my solution in video format in the next lecture
