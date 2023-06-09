@@ -1039,17 +1039,27 @@ const tips = [];
 // 3, Create array for totals. 
 const totals = [];
 // Make a for loop to to loop through each number in the BILLS array. Starts from 0 and should stop once it reaches the entire length of the array. Add i++ as we want to go one by one from one element to another. 
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+}
 
+console.log(bills, tips, totals);
 
 
 // 👋 OPTIONAL: You can watch my solution in video format in the next lecture
 
 function calcAverage(arr) {
-    let sum = 0
-    for (let i = 0; i < arr.length; i + sum);
-    const average = (sum / arr.length);
-    return average;
 
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        // or .. sum = sum +arr[i];
+        sum += arr[i];
+    }
+    return sum / arr.length;
 }
 
+
+console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
