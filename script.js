@@ -1028,38 +1028,80 @@ if (friends.includes('Peter')) {
 
 
 
-const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+// // 1. Create an array to hold bills called bulls 
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// // 2. Create array for tips
+// const tips = [];
+// // 3, Create array for totals. 
+// const totals = [];
+// // Make a for loop to to loop through each number in the BILLS array. Starts from 0 and should stop once it reaches the entire length of the array. Add i++ as we want to go one by one from one element to another. 
+// for (let i = 0; i < bills.length; i++) {
+//     const tip = calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push(tip + bills[i]);
+// }
+
+// console.log(bills, tips, totals);
+
+
+// // 👋 OPTIONAL: You can watch my solution in video format in the next lecture
+
+// function calcAverage(arr) {
+
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         // or .. sum = sum +arr[i];
+//         sum += arr[i];
+//     }
+//     return sum / arr.length;
+// }
+
+
+// console.log(calcAverage([2, 3, 7]));
+// console.log(calcAverage(totals));
+
+let userName = '';
+
+userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
+
+let userQuestion = ("Am I going to become a software developer?");
+
+console.log(`${userName} has asked: ${userQuestion}`);
+
+let randomNumber = Math.floor(Math.random() * 8);
+
+console.log(randomNumber);
+let eightBall = '';
+
+switch (randomNumber) {
+    case 0:
+        eightBall = 'It is certain';
+        break;
+    case 1:
+        eightBall = 'It is decidedly so';
+        break;
+    case 2:
+        eightBall = 'Reply hazy try again';
+        break;
+    case 3:
+        eightBall = 'Cannot predict now';
+        break;
+    case 4:
+        eightBall = 'Do not count on it';
+        break;
+    case 5:
+        eightBall = 'My sources say no';
+        break;
+    case 6:
+        eightBall = 'Outlook not so good';
+        break;
+    case 7:
+        eightBall = 'Signs point to yes';
+        break;
 }
-// 1. Create an array to hold bills called bulls 
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-// 2. Create array for tips
-const tips = [];
-// 3, Create array for totals. 
-const totals = [];
-// Make a for loop to to loop through each number in the BILLS array. Starts from 0 and should stop once it reaches the entire length of the array. Add i++ as we want to go one by one from one element to another. 
-for (let i = 0; i < bills.length; i++) {
-    const tip = calcTip(bills[i]);
-    tips.push(tip);
-    totals.push(tip + bills[i]);
-}
-
-console.log(bills, tips, totals);
-
-
-// 👋 OPTIONAL: You can watch my solution in video format in the next lecture
-
-function calcAverage(arr) {
-
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        // or .. sum = sum +arr[i];
-        sum += arr[i];
-    }
-    return sum / arr.length;
-}
-
-
-console.log(calcAverage([2, 3, 7]));
-console.log(calcAverage(totals));
+console.log(`${eightBall}`);
