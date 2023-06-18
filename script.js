@@ -1064,44 +1064,65 @@ if (friends.includes('Peter')) {
 // console.log(calcAverage([2, 3, 7]));
 // console.log(calcAverage(totals));
 
-let userName = '';
+// let userName = '';
 
-userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
+// userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
 
-let userQuestion = ("Am I going to become a software developer?");
+// let userQuestion = ("Am I going to become a software developer?");
 
-console.log(`${userName} has asked: ${userQuestion}`);
+// console.log(`${userName} has asked: ${userQuestion}`);
 
-let randomNumber = Math.floor(Math.random() * 8);
+// let randomNumber = Math.floor(Math.random() * 8);
 
-console.log(randomNumber);
-let eightBall = '';
+// console.log(randomNumber);
+// let eightBall = '';
 
-switch (randomNumber) {
-    case 0:
-        eightBall = 'It is certain';
-        break;
-    case 1:
-        eightBall = 'It is decidedly so';
-        break;
-    case 2:
-        eightBall = 'Reply hazy try again';
-        break;
-    case 3:
-        eightBall = 'Cannot predict now';
-        break;
-    case 4:
-        eightBall = 'Do not count on it';
-        break;
-    case 5:
-        eightBall = 'My sources say no';
-        break;
-    case 6:
-        eightBall = 'Outlook not so good';
-        break;
-    case 7:
-        eightBall = 'Signs point to yes';
-        break;
+// switch (randomNumber) {
+//     case 0:
+//         eightBall = 'It is certain';
+//         break;
+//     case 1:
+//         eightBall = 'It is decidedly so';
+//         break;
+//     case 2:
+//         eightBall = 'Reply hazy try again';
+//         break;
+//     case 3:
+//         eightBall = 'Cannot predict now';
+//         break;
+//     case 4:
+//         eightBall = 'Do not count on it';
+//         break;
+//     case 5:
+//         eightBall = 'My sources say no';
+//         break;
+//     case 6:
+//         eightBall = 'Outlook not so good';
+//         break;
+//     case 7:
+//         eightBall = 'Signs point to yes';
+//         break;
+// }
+
+// console.log(`${eightBall}`);
+
+
+let raceNumber = Math.floor(Math.random() * 1000);
+
+const registeredEarly = false;
+
+const runnersAge = 10;
+
+if (runnersAge > 18 && registeredEarly) {
+    raceNumber += 1000;
+};
+
+if (runnersAge > 18 && registeredEarly) {
+    console.log(`Race Number (${raceNumber}) : Your race will start at 9.30am.`);
+} else if (runnersAge > 18 && !registeredEarly) {
+    console.log(`Race Number (${raceNumber}) : Your race will start at 11:00am.`);
+};
+
+if (runnersAge < 18) {
+    console.log(`Race Number (${raceNumber}): Your race will start at 12:30pm.`)
 }
-
-console.log(`${eightBall}`);
