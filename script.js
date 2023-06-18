@@ -1125,4 +1125,6 @@ if (runnersAge > 18 && registeredEarly) {
 
 if (runnersAge < 18) {
     console.log(`Race Number (${raceNumber}): Your race will start at 12:30pm.`)
-}
+} else if (runnersAge === 18) {
+    console.log('Please come to the registration desk.')
+};
