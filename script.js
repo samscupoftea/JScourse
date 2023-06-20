@@ -1106,23 +1106,79 @@ if (friends.includes('Peter')) {
 
 // console.log(`${eightBall}`);
 
+// var myArray = [0, 1, 2, 3, 4, 5,];
+// const sum = myArray.reduce((a, b) => a + b, 0);
+// const average = (sum / myArray.length) || 0;
+// console.log(`The sum is: ${sum}. The average is: ${average}.`); //"The sum is: 15. The average is 2.5."
 
-let raceNumber = Math.floor(Math.random() * 1000);
 
-const registeredEarly = false;
+// let myArray = [1, 2, 3, 4, 5];
+// let sum = 0;
 
-const runnersAge = 18;
+// for (let i = 0; i < myArray.length; i++) {
+//     sum += myArray[i];
+// }
+// const avg = sum / myArray.length;
 
-if (runnersAge > 18 && registeredEarly) {
-    raceNumber += 1000;
+// console.log(sum);
+// console.log(avg);
+
+// function getAverage(marks) {
+//     let sum = 0;
+//     for (let i = 0; i < marks.length; i++) {
+//         sum += marks[i];
+//         let avg = sum / marks.length;
+//         return avg;
+
+
+//     };
+
+//     //TODO : calculate the downward rounded average of the marks array
+// };
+
+// let oneToTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// getAverage();
+
+
+function likes(names) {
+    if (names.length === 0) {
+        return `"no one likes this"`;
+    } else if (names.length === 1) {
+        return `""${names[0]} likes this"`;
+    } else if (names.length === 2) {
+        return `"${names[0]} and ${names[1]} like this"`;
+    } else if (names.length === 3) {
+        return `"${names[0]}, ${names[1]} and ${names[2]}" `
+    } else if (names.length > 3) {
+        return `"${names[0]}, ${names[1]} and ${names.legnth - 2} others like this"`
+    }
+    // TODO
 };
 
-if (runnersAge > 18 && registeredEarly) {
-    console.log(`Race Number (${raceNumber}) : Your race will start at 9.30am.`);
-} else if (runnersAge > 18 && !registeredEarly) {
-    console.log(`Race Number (${raceNumber}) : Your race will start at 11:00am.`);
-} else if (runnersAge < 18) {
-    console.log(`Race Number (${raceNumber}): Your race will start at 12:30pm.`)
-} else {
-    console.log('Please come to the registration desk.')
-};
+
+
+
+
+function likes(names) {
+    if (names.length === 0) {
+        return 'no one likes this';
+    } else if (names.length === 1) {
+        return `${names[0]} likes this`;
+    } else if (names.length === 2) {
+        return `${names[0]} and ${names[1]} like this`;
+    } else if (names.length === 3) {
+        return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+    } else if (names.length > 3) {
+        return `${names[0]}, ${names[1]} and ${names.length - 2} other like this`;
+    }
+
+// []                                -->  "no one likes this"
+// ["Peter"]                         -->  "Peter likes this"
+// ["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
+// ["Max", "John", "Mark"]-- > "Max, John and Mark like this"
+// ["Alex", "Jacob", "Mark", "Max"]-- > "Alex, Jacob and 2 others like this"
+
+
+
+
