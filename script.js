@@ -1141,44 +1141,71 @@ if (friends.includes('Peter')) {
 // getAverage();
 
 
-function likes(names) {
-    if (names.length === 0) {
-        return `"no one likes this"`;
-    } else if (names.length === 1) {
-        return `""${names[0]} likes this"`;
-    } else if (names.length === 2) {
-        return `"${names[0]} and ${names[1]} like this"`;
-    } else if (names.length === 3) {
-        return `"${names[0]}, ${names[1]} and ${names[2]}" `
-    } else if (names.length > 3) {
-        return `"${names[0]}, ${names[1]} and ${names.legnth - 2} others like this"`
-    }
-    // TODO
-};
+// function likes(names) {
+//     if (names.length === 0) {
+//         return `"no one likes this"`;
+//     } else if (names.length === 1) {
+//         return `""${names[0]} likes this"`;
+//     } else if (names.length === 2) {
+//         return `"${names[0]} and ${names[1]} like this"`;
+//     } else if (names.length === 3) {
+//         return `"${names[0]}, ${names[1]} and ${names[2]}" `
+//     } else if (names.length > 3) {
+//         return `"${names[0]}, ${names[1]} and ${names.legnth - 2} others like this"`
+//     }
+//     // TODO
+// };
 
 
 
 
 
-function likes(names) {
-    if (names.length === 0) {
-        return 'no one likes this';
-    } else if (names.length === 1) {
-        return `${names[0]} likes this`;
-    } else if (names.length === 2) {
-        return `${names[0]} and ${names[1]} like this`;
-    } else if (names.length === 3) {
-        return `${names[0]}, ${names[1]} and ${names[2]} like this`;
-    } else if (names.length > 3) {
-        return `${names[0]}, ${names[1]} and ${names.length - 2} other like this`;
-    }
+// function likes(names) {
+//     if (names.length === 0) {
+//         return 'no one likes this';
+//     } else if (names.length === 1) {
+//         return `${names[0]} likes this`;
+//     } else if (names.length === 2) {
+//         return `${names[0]} and ${names[1]} like this`;
+//     } else if (names.length === 3) {
+//         return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+//     } else if (names.length > 3) {
+//         return `${names[0]}, ${names[1]} and ${names.length - 2} other like this`;
+//     }
 
-// []                                -->  "no one likes this"
-// ["Peter"]                         -->  "Peter likes this"
-// ["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
-// ["Max", "John", "Mark"]-- > "Max, John and Mark like this"
-// ["Alex", "Jacob", "Mark", "Max"]-- > "Alex, Jacob and 2 others like this"
+// // []                                -->  "no one likes this"
+// // ["Peter"]                         -->  "Peter likes this"
+// // ["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
+// // ["Max", "John", "Mark"]-- > "Max, John and Mark like this"
+// // ["Alex", "Jacob", "Mark", "Max"]-- > "Alex, Jacob and 2 others like this"
+
+// function doesItHaveB(a, b) {
+//     for (let i = 0; i < a.length; i++) {
+//       if (i === b) {
+//         return true;
+//       } else {
+//         return false;
+//       }
+//     }
+//   }
+// doesItHaveB(list);
+//   person 
+
+//   [1, 2, 6, 'John']; 
+//   name: Sam 
+Age: 32
+// Write a function that takes an object (a) and a string (b) as argument
+// Return true if the object has a property with key 'b'
+// Return false otherwise
+
+// Test cases:
+
+// myFunction({a:1,b:2,c:3},'b')
+
+// myFunction({x:'a',y:'b',z:'c'},'a')
+
+// myFunction({x:'a',y:'b',z:undefined},'z')
 
 
 
-
+function
