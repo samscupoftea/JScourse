@@ -1208,4 +1208,16 @@ Age: 32
 
 
 
-function
+function calculateArea(width, height) {
+    const area = width * height;
+    return area;
+}
+
+calculateArea(20, 40);
+console.log(calculateArea);
+
+
+function printNumbers(n) {
+    for (let i = 1; i <= n; i++)
+        console.log(i);
+}
