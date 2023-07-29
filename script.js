@@ -1221,3 +1221,38 @@ function printNumbers(n) {
     for (let i = 1; i <= n; i++)
         console.log(i);
 }
+
+function isEven(num) {
+    if (num = (number % 2 == 0)) {
+        return true;
+    };
+};
+
+// Exercise 4: Functions
+
+// Write a function called reverseString that takes a string str as a parameter and returns the reverse of the input string.
+
+// function reverseString(str) {
+//     return str.split('').reverse().join('');
+//     console.log(str);
+
+// }
+// reverseString('Bryan');
+// console.log(reverseString);
+
+
+
+// Write a function called filterEvenNumbers that takes an array of numbers as a parameter and returns a new array containing only the even numbers from the original array.
+
+// function EvenNumbers() {
+//     numsArr = [];
+//     return numsArr.map(number % 2 == 0);
+
+// };
+
+//ARRAY METHODS 
+
+let arr = ['a', 'b', 'c', 'd', 'e'];
+console.log(arr.length);
+console.log(arr[1]);
+console.log(arr.slice(2));
