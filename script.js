@@ -1280,3 +1280,13 @@ console.log([...arr, ...arr2]);
 //JOIN
 console.log(letters.join(' - '));
 console.log(letters.join(' yep! '));
+
+
+
+// STANDARD FUNCTION
+const calcAge2 = function (birthYear) {
+    return 2037 = birthYear;
+}
+// HOW WE WRITE ARROW FUNCTIONS 
+const calcAge3 = birthYear => 2037 - birthYear;
+
