@@ -1639,3 +1639,17 @@ if (friends.includes('Peter')) {
 // // console.log(array);
 
 
+
+
+const nums = [20, 30, 40, 50];
+console.log(nums);
+  function setSecondElementToZero(nums) {
+    if (nums.length >= 2) {
+        nums[1] = 0;
+    }
+    return nums;
+  }
+ 
+  const changedNums = setSecondElementToZero(nums);
+ 
+  console.log(changedNums);
